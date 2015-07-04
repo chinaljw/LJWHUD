@@ -27,9 +27,9 @@
 //        NSLog(@"show in view complete");
 //    }];
     
-    [self.view showMessageViewWithMessage:@"hello world!" completionBlock:^{
+    [self.view showMessageViewWithMessage:@"showing in self.view" completionBlock:^{
        
-        NSLog(@"show in self.view complete!");
+        NSLog(@"complete!");
         
     }];
 
@@ -40,9 +40,9 @@
 //        NSLog(@"show in keyWindow complete");
 //    }];
     
-    [[UIApplication sharedApplication].keyWindow showMessageViewWithMessage:@"this is show in keyWindow!" completionBlock:^{
+    [[UIApplication sharedApplication].keyWindow showMessageViewWithMessage:@"showing in keyWindow!" completionBlock:^{
        
-        NSLog(@"show in keyWindow complete!");
+        NSLog(@"complete!");
         
     }];
     
